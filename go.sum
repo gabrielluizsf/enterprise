@@ -1,0 +1,6 @@
+github.com/i9si-sistemas/assert v0.0.0-20250430171352-359d1481c58c h1:8DlRk8oT2YFyo8MbY00ge2wEEGGLZWr2mGJextdSePI=
+github.com/i9si-sistemas/assert v0.0.0-20250430171352-359d1481c58c/go.mod h1:xRwY4u6NZZjNLlgdBSaNESQEUSJ4CxuT4lWQAbvwfBQ=
+github.com/i9si-sistemas/cep v0.0.0-20250505170137-9e3cce248a9f h1:QWP3oa5nsDorHFePfEgtBbUvCOO6Cy/iByIE13qzFNI=
+github.com/i9si-sistemas/cep v0.0.0-20250505170137-9e3cce248a9f/go.mod h1:2unwB504M7nk318ChQv3PDR+EWWMr90vxNmMO5BC9CQ=
+github.com/i9si-sistemas/nine v0.0.0-20250430172703-ed2ecb6b9c71 h1:yIyAEA40c0nxTVmDbU+It7IbTlf4myqfknBy8yhXqwY=
+github.com/i9si-sistemas/nine v0.0.0-20250430172703-ed2ecb6b9c71/go.mod h1:6j/47ihyu5Zz9S4RTIQ939jbbz2Zb9ZYshM7TA6LnT8=
