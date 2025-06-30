@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"strings"
 
 	"github.com/i9si-sistemas/cep/api"
 	"github.com/i9si-sistemas/nine"
 	"github.com/i9si-sistemas/nine/pkg/client"
+	"github.com/i9si-sistemas/stringx"
 )
 
 func WithCNPJ(ctx context.Context, cnpj string) (Enterprise, error) {
@@ -32,11 +32,29 @@ func WithCNPJ(ctx context.Context, cnpj string) (Enterprise, error) {
 }
 
 func cleanCEP(cep string) string {
-	return strings.NewReplacer(".", "", "-", "", "/", "").Replace(cep)
+	return cleaner{s: cep}.Clean()
 }
 
 func cleanCNPJ(cnpj string) string {
-	return strings.NewReplacer(".", "", "-", "", "/", "").Replace(cnpj)
+	return cleaner{s: cnpj}.Clean()
+}
+
+type cleaner struct {
+	s string
+}
+
+func (c cleaner) Clean() string {
+	var (
+		empty = stringx.Empty.String()
+		old   = []string{".", "-", "/"}
+		new   = []string{empty, empty, empty}
+	)
+	s, _ := stringx.NewReplacer(
+		stringx.String(c.s),
+		old,
+		new,
+	).Replace()
+	return s
 }
 
 type enterpriseWithCNPJ struct {
