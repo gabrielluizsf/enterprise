@@ -4,3 +4,5 @@ github.com/i9si-sistemas/cep v0.0.0-20250505170137-9e3cce248a9f h1:QWP3oa5nsDorH
 github.com/i9si-sistemas/cep v0.0.0-20250505170137-9e3cce248a9f/go.mod h1:2unwB504M7nk318ChQv3PDR+EWWMr90vxNmMO5BC9CQ=
 github.com/i9si-sistemas/nine v0.0.0-20250430172703-ed2ecb6b9c71 h1:yIyAEA40c0nxTVmDbU+It7IbTlf4myqfknBy8yhXqwY=
 github.com/i9si-sistemas/nine v0.0.0-20250430172703-ed2ecb6b9c71/go.mod h1:6j/47ihyu5Zz9S4RTIQ939jbbz2Zb9ZYshM7TA6LnT8=
+github.com/i9si-sistemas/stringx v1.5.1 h1:DtQRd2gm7Qrl7ToHR1axApfGF78Qiv5MCD63Cd6ZPjE=
+github.com/i9si-sistemas/stringx v1.5.1/go.mod h1:+GhyHUFCjPCdi4BOTLuXI1O0VE0YZP1kn32XEcb9bk4=
